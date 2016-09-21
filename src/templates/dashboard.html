@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block mainbody %}
+    <div>
+        <input type="button" id="test" value="test"/>
+    </div>
+    <script>
+
+        $(function () {
+
+            $("#test").on("click", function () {
+                window.print();
+            });
+
+        });
+    </script>
+
+
+{% endblock %}
